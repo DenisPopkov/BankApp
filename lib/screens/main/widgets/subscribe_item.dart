@@ -21,10 +21,10 @@ class SubscribeItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(PaddingAssets.smallPadding),
+      padding: EdgeInsets.all(PaddingAssets.lightPadding),
       child: Container(
-        width: 216,
-        height: 130,
+        width: PaddingAssets.subscribeItemWidth,
+        height: PaddingAssets.subscribeItemHeight,
         padding: EdgeInsets.all(PaddingAssets.mediumPadding),
         decoration: BoxDecoration(
           color: ColorAssets.whiteColor,
@@ -48,8 +48,9 @@ class SubscribeItem extends StatelessWidget {
                 Text(
                   title,
                   style: TextStyle(
+                      fontFamily: FontAssets.sfProTextMedium,
                       color: ColorAssets.blackColor,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w500,
                       fontSize: FontAssets.bigFontSize16),
                 ),
               ],
@@ -60,9 +61,9 @@ class SubscribeItem extends StatelessWidget {
                 Text(
                   description,
                   style: TextStyle(
-                    fontFamily: FontAssets.sfProTextBold,
-                    color: ColorAssets.blackColor
-                        .withOpacity(ColorAssets.mediumOpacity),
+                    fontFamily: FontAssets.sfProTextMedium,
+                    color: ColorAssets.blackColor,
+                    fontWeight: FontWeight.w500,
                     fontSize: FontAssets.mediumFontSize14,
                   ),
                 ),
@@ -77,6 +78,7 @@ class SubscribeItem extends StatelessWidget {
                     fontFamily: FontAssets.sfProTextMedium,
                     color: ColorAssets.blackColor
                         .withOpacity(ColorAssets.mediumOpacity),
+                    fontWeight: FontWeight.w500,
                     fontSize: FontAssets.mediumFontSize14,
                   ),
                 ),
