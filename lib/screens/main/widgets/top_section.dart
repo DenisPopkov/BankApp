@@ -19,7 +19,7 @@ class TopSection extends StatelessWidget {
         top: PaddingAssets.superLargePadding,
         left: PaddingAssets.bigPadding,
         right: PaddingAssets.bigPadding,
-        bottom: 0,
+        bottom: PaddingAssets.zeroPadding,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -27,35 +27,27 @@ class TopSection extends StatelessWidget {
         children: [
           SvgPicture.asset(
             ImageAssets.closeIcon,
-            width: PaddingAssets.smallIcon,
-            height: PaddingAssets.smallIcon,
           ),
-          Padding(
-            padding: EdgeInsets.only(top: PaddingAssets.smallPadding),
-            child: Column(
-              // mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Image.asset(
-                  ImageAssets.userImage,
-                  width: PaddingAssets.imageSize,
-                  height: PaddingAssets.imageSize,
-                ),
-                Text(
-                  StringAssets.userName,
-                  style: TextStyle(
-                      fontFamily: FontAssets.sfProDisplayBold,
-                      color: ColorAssets.blackColor,
-                      fontWeight: FontWeight.bold,
-                      fontSize: FontAssets.largeFontSize24),
-                )
-              ],
-            ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image.asset(
+                ImageAssets.userImage,
+              ),
+              SizedBox(height: PaddingAssets.headerPadding),
+              Text(
+                StringAssets.userName,
+                style: TextStyle(
+                    fontFamily: FontAssets.sfProDisplayBold,
+                    color: ColorAssets.blackColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: FontAssets.largeFontSize24),
+              ),
+              SizedBox(height: PaddingAssets.headerPadding),
+            ],
           ),
           SvgPicture.asset(
             ImageAssets.exitIcon,
-            width: PaddingAssets.smallIcon,
-            height: PaddingAssets.smallIcon,
           ),
         ],
       ),

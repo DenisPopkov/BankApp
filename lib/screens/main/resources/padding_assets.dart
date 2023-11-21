@@ -1,10 +1,11 @@
 class PaddingAssets {
   // Paddings
+  static double zeroPadding = 0.0;
   static double lightPadding = 4.0;
   static double smallPadding = 8.0;
   static double mediumPadding = 16.0;
   static double bigPadding = 24.0;
-  static double headerPadding = 36.0;
+  static double headerPadding = 18.0;
   static double bottomPadding = 36.0;
   static double largePadding = 46.0;
   static double superLargePadding = 58.0;
