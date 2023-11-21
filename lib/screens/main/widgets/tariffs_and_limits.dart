@@ -23,7 +23,7 @@ class TariffsAndLimits extends StatelessWidget {
         TariffAndLimitsItem(
           title: StringAssets.transactionsWithoutExtraTitle,
           subtitle: StringAssets.showBalanceTitle,
-          pathToImage: ImageAssets.percentIcon,
+          pathToImage: ImageAssets.notFillPercentIcon,
           onTab: () {},
         ),
         SizedBox(height: PaddingAssets.mediumRadius),

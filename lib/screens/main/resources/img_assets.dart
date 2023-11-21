@@ -8,4 +8,5 @@ class ImageAssets {
   static String sberIcon = 'assets/ic_sber.svg';
   static String transferIcon = 'assets/ic_transfer.svg';
   static String userImage = 'assets/ic_user.png';
+  static String notFillPercentIcon = 'assets/ic_not_fill_percent.svg';
 }
