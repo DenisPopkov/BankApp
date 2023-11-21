@@ -33,6 +33,8 @@ class TopSection extends StatelessWidget {
             children: [
               Image.asset(
                 ImageAssets.userImage,
+                width: PaddingAssets.imageSize,
+                height: PaddingAssets.imageSize,
               ),
               SizedBox(height: PaddingAssets.headerPadding),
               Text(
@@ -43,7 +45,7 @@ class TopSection extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: FontAssets.largeFontSize24),
               ),
-              SizedBox(height: PaddingAssets.headerPadding),
+              SizedBox(height: PaddingAssets.bigPadding),
             ],
           ),
           SvgPicture.asset(

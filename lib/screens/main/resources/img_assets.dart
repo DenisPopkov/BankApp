@@ -7,5 +7,5 @@ class ImageAssets {
   static String roundPercentIcon = 'assets/ic_round_percent.svg';
   static String sberIcon = 'assets/ic_sber.svg';
   static String transferIcon = 'assets/ic_transfer.svg';
-  static String userImage = 'assets/ic_user.png';
+  static String userImage = 'assets/ic_user.webp';
 }

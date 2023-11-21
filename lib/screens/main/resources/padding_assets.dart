@@ -17,7 +17,7 @@ class PaddingAssets {
   static double mediumSize = 12.0;
   static double smallIcon = 24.0;
   static double mediumIcon = 34.0;
-  static double imageSize = 110.0;
+  static double imageSize = 140.0;
   static double subscribeItemHeight = 130.0;
   static double subscribeItemWidth = 220.0;
   static double tarriffItemHeight = 54.0;
