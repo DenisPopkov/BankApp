@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class ColorAssets {
   static double slightOpacity = 0.08;
   static double lightOpacity = 0.1;
+  static double normalOpacity = 0.3;
   static double mediumOpacity = 0.5;
   static double spreadRadius = 2;
   static double blurRadius = 2;

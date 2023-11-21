@@ -17,6 +17,7 @@ class StringAssets {
   static String showBalanceTitle = 'Показать остаток в этом месяце';
   static String limitInformationTitle = 'Информация о тарифах\nи лимитах';
   static String interestTitle = 'Интересы';
+  static String changeLimitTitle = 'Изменить суточный лимит';
   static String historyCaption =
       'Мы подбираем истории и предложения по темам,\nкоторые вам нравятся';
   static String foodChip = 'Еда';
