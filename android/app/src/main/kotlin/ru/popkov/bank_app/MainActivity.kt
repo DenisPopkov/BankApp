@@ -1,6 +1,0 @@
-package ru.popkov.bank_app
-
-import io.flutter.embedding.android.FlutterActivity
-
-class MainActivity: FlutterActivity() {
-}
