@@ -9,6 +9,9 @@ class PaddingAssets {
   static double largePadding = 46.0;
 
   // Sized
+  static double slightSize = 2.0;
+  static double mediumRadius = 12.0;
+  static double mediumSize = 12.0;
   static double smallIcon = 24.0;
   static double imageSize = 110.0;
 

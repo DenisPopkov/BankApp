@@ -4,4 +4,5 @@ class FontAssets {
   static String sfProDisplayBold = 'fonts/SF-Pro-Display-Bold';
 
   static double mediumFontSize14 = 14.0;
+  static double bigFontSize16 = 16.0;
 }
