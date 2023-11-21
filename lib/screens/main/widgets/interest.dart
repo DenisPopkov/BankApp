@@ -22,7 +22,24 @@ class Interest extends StatelessWidget {
     return Wrap(
       spacing: PaddingAssets.smallSpacing,
       runSpacing: PaddingAssets.smallSpacing,
-      children: items.map((label) => InterestItem(label)).toList(),
+      children: items
+          .map((label) => TextButton(
+                onPressed: () {},
+                style: TextButton.styleFrom(
+                  foregroundColor: ColorAssets.chipContainer,
+                  minimumSize: Size.zero,
+                  padding: EdgeInsets.zero,
+                  shape: RoundedRectangleBorder(
+                      borderRadius:
+                          BorderRadius.circular(PaddingAssets.mediumPadding),
+                      side: BorderSide(
+                          color: ColorAssets.chipContainer,
+                          width: PaddingAssets.zeroPadding)),
+                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                ),
+                child: InterestItem(label),
+              ))
+          .toList(),
     );
   }
 }
