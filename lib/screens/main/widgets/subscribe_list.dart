@@ -5,8 +5,6 @@ import 'package:bank_app/screens/main/widgets/subscribe_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import 'flag_icon.dart';
-
 class SubscribeList extends StatelessWidget {
   const SubscribeList({Key? key}) : super(key: key);
 
@@ -21,7 +19,9 @@ class SubscribeList extends StatelessWidget {
             title: StringAssets.sberPrimeTitle,
             description: StringAssets.feeTitle,
             costPerMonth: StringAssets.feeSumTitle,
-            titleIcon: const FlagIcon(),
+            titleIcon: SvgPicture.asset(
+              ImageAssets.sberIcon,
+            ),
           ),
           SubscribeItem(
             title: StringAssets.transactionsTitle,

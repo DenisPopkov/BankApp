@@ -30,7 +30,7 @@ class TariffsAndLimits extends StatelessWidget {
         TariffAndLimitsItem(
           title: StringAssets.limitInformationTitle,
           subtitle: '',
-          pathToImage: ImageAssets.arrowIcon,
+          pathToImage: ImageAssets.transferIcon,
           onTab: () {},
         ),
       ],

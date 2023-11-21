@@ -27,8 +27,13 @@ class TariffAndLimitsItem extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SvgPicture.asset(
-            pathToImage,
+          Padding(
+            padding: EdgeInsets.only(
+              top: PaddingAssets.smallPadding,
+            ),
+            child: SvgPicture.asset(
+              pathToImage,
+            ),
           ),
           Expanded(
             child: Container(
@@ -55,6 +60,7 @@ class TariffAndLimitsItem extends StatelessWidget {
                       color: ColorAssets.blackColor,
                     ),
                   ),
+                  SizedBox(height: PaddingAssets.lightPadding),
                   if (subtitle.isNotEmpty) ...[
                     Text(
                       subtitle,
@@ -71,9 +77,10 @@ class TariffAndLimitsItem extends StatelessWidget {
               ),
             ),
           ),
-          // Spacer(),
           Container(
-            padding: EdgeInsets.only(bottom: PaddingAssets.bigPadding),
+            padding: EdgeInsets.only(
+                bottom: PaddingAssets.bigPadding,
+                right: PaddingAssets.mediumPadding),
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
@@ -84,7 +91,7 @@ class TariffAndLimitsItem extends StatelessWidget {
               ),
             ),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SvgPicture.asset(
                   ImageAssets.arrowIcon,

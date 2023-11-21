@@ -38,7 +38,9 @@ class InterestItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+      padding: EdgeInsets.symmetric(
+          horizontal: PaddingAssets.mediumSpacing,
+          vertical: PaddingAssets.smallSpacing),
       decoration: BoxDecoration(
         color: Colors.black.withOpacity(ColorAssets.slightOpacity),
         borderRadius: BorderRadius.circular(PaddingAssets.mediumPadding),
@@ -46,9 +48,9 @@ class InterestItem extends StatelessWidget {
       child: Text(
         label,
         style: TextStyle(
-          fontFamily: FontAssets.sfProTextBold,
+          fontFamily: FontAssets.sfProTextMedium,
           color: ColorAssets.blackColor,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w500,
           fontSize: FontAssets.mediumFontSize14,
         ),
       ),

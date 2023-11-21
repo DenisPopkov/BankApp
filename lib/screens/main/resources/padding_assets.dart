@@ -25,4 +25,5 @@ class PaddingAssets {
 
   // Spacings
   static double smallSpacing = 8.0;
+  static double mediumSpacing = 12.0;
 }

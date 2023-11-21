@@ -18,6 +18,9 @@ class UserProfilePage extends StatelessWidget {
     return Material(
       color: ColorAssets.whiteColor,
       child: SafeArea(
+        left: false,
+        right: false,
+        bottom: false,
         child: Column(
           children: [
             const TopSection(),
@@ -74,29 +77,60 @@ class ProfileTab extends StatelessWidget {
     return SingleChildScrollView(
       child: Container(
         color: ColorAssets.containerColor,
-        padding: EdgeInsets.all(PaddingAssets.mediumPadding),
+        // padding: EdgeInsets.all(PaddingAssets.mediumPadding),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: PaddingAssets.titlePadding),
-            TitleSection(
-              title: StringAssets.subscriptionTitle,
-              subTitle: StringAssets.subscriptionsTitle,
+            Padding(
+              padding: EdgeInsets.only(
+                  left: PaddingAssets.mediumPadding,
+                  right: PaddingAssets.mediumPadding),
+              child: TitleSection(
+                title: StringAssets.subscriptionTitle,
+                subTitle: StringAssets.subscriptionsTitle,
+              ),
             ),
-            const SubscribeList(),
+            Padding(
+              padding: EdgeInsets.only(
+                left: PaddingAssets.mediumPadding,
+              ),
+              child: const SubscribeList(),
+            ),
             SizedBox(height: PaddingAssets.largePadding),
-            TitleSection(
-              title: StringAssets.limitsAndSubscriptionsTitle,
-              subTitle: StringAssets.onlySberTitle,
+            Padding(
+              padding: EdgeInsets.only(
+                  left: PaddingAssets.mediumPadding,
+                  right: PaddingAssets.mediumPadding),
+              child: TitleSection(
+                title: StringAssets.limitsAndSubscriptionsTitle,
+                subTitle: StringAssets.onlySberTitle,
+              ),
             ),
-            const TariffsAndLimits(),
+            Padding(
+              padding: EdgeInsets.only(
+                left: PaddingAssets.mediumPadding,
+              ),
+              child: const TariffsAndLimits(),
+            ),
+            SizedBox(height: PaddingAssets.largePadding),
+            Padding(
+              padding: EdgeInsets.only(
+                  left: PaddingAssets.mediumPadding,
+                  right: PaddingAssets.mediumPadding),
+              child: TitleSection(
+                title: StringAssets.interestTitle,
+                subTitle: StringAssets.historyCaption,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: PaddingAssets.mediumPadding,
+                right: PaddingAssets.mediumPadding,
+              ),
+              child: const Interest(),
+            ),
             SizedBox(height: PaddingAssets.bottomPadding),
-            TitleSection(
-              title: StringAssets.interestTitle,
-              subTitle: StringAssets.historyCaption,
-            ),
-            SizedBox(height: PaddingAssets.mediumRadius),
-            const Interest(),
           ],
         ),
       ),
