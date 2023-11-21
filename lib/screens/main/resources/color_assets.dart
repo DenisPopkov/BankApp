@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ColorAssets {
+  static double slightOpacity = 0.08;
   static double lightOpacity = 0.1;
   static Color containerColor = const Color.fromARGB(255, 250, 250, 250);
   static Color chipContainer = const Color.fromARGB(20, 0, 0, 0);
