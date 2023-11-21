@@ -1,4 +1,5 @@
 import 'package:bank_app/screens/main/resources/color_assets.dart';
+import 'package:bank_app/screens/main/resources/fonts_assets.dart';
 import 'package:bank_app/screens/main/resources/padding_assets.dart';
 import 'package:bank_app/screens/main/resources/string_assets.dart';
 import 'package:bank_app/screens/main/theme/theme_app.dart';
@@ -15,7 +16,7 @@ class UserProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
+      color: ColorAssets.whiteColor,
       child: SafeArea(
         child: Column(
           children: [
@@ -27,11 +28,15 @@ class UserProfilePage extends StatelessWidget {
                 child: Scaffold(
                   appBar: AppBar(
                     toolbarHeight: PaddingAssets.mediumRadius,
-                    elevation: 1,
-                    backgroundColor: Colors.white,
-                    // foregroundColor: Colors.black,
+                    elevation: ColorAssets.lightElevation,
+                    backgroundColor: ColorAssets.whiteColor,
                     bottom: TabBar(
-                      labelColor: Colors.black,
+                      labelColor: ColorAssets.blackColor,
+                      labelStyle: TextStyle(
+                        fontFamily: FontAssets.sfProTextMedium,
+                        fontSize: FontAssets.bigFontSize16,
+                        fontWeight: FontWeight.w500,
+                      ),
                       indicatorColor: const Color(ThemeApp.tabIndicatorColor),
                       tabs: [
                         Tab(text: StringAssets.profileTitle),
@@ -70,8 +75,6 @@ class ProfileTab extends StatelessWidget {
       child: Container(
         color: ColorAssets.blackColor.withOpacity(ColorAssets.lightOpacity),
         padding: EdgeInsets.all(PaddingAssets.mediumPadding),
-        // width: MediaQuery.of(context).size.width,
-        // height: MediaQuery.of(context).size.height,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

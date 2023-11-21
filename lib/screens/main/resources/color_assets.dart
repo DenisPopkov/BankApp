@@ -9,6 +9,7 @@ class ColorAssets {
   static double blurRadius = 2;
   static double shadowX = 0;
   static double shadowY = 2;
+  static double lightElevation = 1;
   static Color containerColor = const Color.fromARGB(255, 250, 250, 250);
   static Color chipContainer = const Color.fromARGB(20, 0, 0, 0);
   static Color secondaryColor = const Color.fromARGB(140, 0, 0, 0);
