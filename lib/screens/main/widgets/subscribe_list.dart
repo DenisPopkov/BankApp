@@ -37,7 +37,7 @@ class SubscribeList extends StatelessWidget {
             title: StringAssets.sberPrimeTitle,
             description: StringAssets.feeTitle,
             costPerMonth: StringAssets.feeSumTitle,
-            titleIcon: Image.asset(
+            titleIcon: SvgPicture.asset(
               ImageAssets.sberIcon,
               height: PaddingAssets.smallIcon,
               width: PaddingAssets.smallIcon,

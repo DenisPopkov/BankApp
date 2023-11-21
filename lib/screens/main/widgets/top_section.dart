@@ -3,6 +3,7 @@ import 'package:bank_app/screens/main/resources/fonts_assets.dart';
 import 'package:bank_app/screens/main/resources/padding_assets.dart';
 import 'package:bank_app/screens/main/resources/string_assets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../resources/img_assets.dart';
 
@@ -24,7 +25,7 @@ class TopSection extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset(
+          SvgPicture.asset(
             ImageAssets.closeIcon,
             width: PaddingAssets.smallIcon,
             height: PaddingAssets.smallIcon,
@@ -51,7 +52,7 @@ class TopSection extends StatelessWidget {
               ],
             ),
           ),
-          Image.asset(
+          SvgPicture.asset(
             ImageAssets.exitIcon,
             width: PaddingAssets.smallIcon,
             height: PaddingAssets.smallIcon,

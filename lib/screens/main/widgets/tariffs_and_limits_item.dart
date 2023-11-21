@@ -2,6 +2,7 @@ import 'package:bank_app/screens/main/resources/color_assets.dart';
 import 'package:bank_app/screens/main/resources/fonts_assets.dart';
 import 'package:bank_app/screens/main/resources/img_assets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../resources/padding_assets.dart';
 
@@ -26,7 +27,7 @@ class TariffAndLimitsItem extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset(
+          SvgPicture.asset(
             pathToImage,
             width: PaddingAssets.mediumIcon,
             height: PaddingAssets.mediumIcon,
@@ -87,7 +88,7 @@ class TariffAndLimitsItem extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Image.asset(
+                SvgPicture.asset(
                   ImageAssets.arrowIcon,
                   color: ColorAssets.blackColor
                       .withOpacity(ColorAssets.normalOpacity),
