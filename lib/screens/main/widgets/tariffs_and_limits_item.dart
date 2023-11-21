@@ -11,12 +11,14 @@ class TariffAndLimitsItem extends StatelessWidget {
   final String title;
   final String subtitle;
   final Function onTab;
+  final bool isLastItem;
 
   const TariffAndLimitsItem({
     required this.pathToImage,
     required this.title,
     required this.subtitle,
     required this.onTab,
+    required this.isLastItem,
     Key? key,
   }) : super(key: key);
 
@@ -29,7 +31,7 @@ class TariffAndLimitsItem extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.only(
-              top: PaddingAssets.smallPadding,
+              top: PaddingAssets.lightPadding,
             ),
             child: SvgPicture.asset(
               pathToImage,
@@ -42,8 +44,10 @@ class TariffAndLimitsItem extends StatelessWidget {
                 border: Border(
                   bottom: BorderSide(
                     width: PaddingAssets.strokeWidth,
-                    color: ColorAssets.blackColor
-                        .withOpacity(ColorAssets.lightOpacity),
+                    color: isLastItem
+                        ? Colors.transparent
+                        : ColorAssets.blackColor
+                            .withOpacity(ColorAssets.lightOpacity),
                   ),
                 ),
               ),
@@ -79,15 +83,19 @@ class TariffAndLimitsItem extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.only(
-                bottom: PaddingAssets.bigPadding,
+                bottom: isLastItem ? 0 : PaddingAssets.bigPadding,
                 right: PaddingAssets.mediumPadding),
             decoration: BoxDecoration(
               border: Border(
-                bottom: BorderSide(
-                  width: PaddingAssets.strokeWidth,
-                  color: ColorAssets.blackColor
-                      .withOpacity(ColorAssets.lightOpacity),
-                ),
+                bottom: isLastItem
+                    ? BorderSide.none
+                    : BorderSide(
+                        width: PaddingAssets.strokeWidth,
+                        color: isLastItem
+                            ? ColorAssets.whiteColor
+                            : ColorAssets.blackColor
+                                .withOpacity(ColorAssets.lightOpacity),
+                      ),
               ),
             ),
             child: Column(

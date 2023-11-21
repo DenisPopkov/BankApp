@@ -2,7 +2,6 @@ import 'package:bank_app/screens/main/resources/color_assets.dart';
 import 'package:bank_app/screens/main/resources/fonts_assets.dart';
 import 'package:bank_app/screens/main/resources/padding_assets.dart';
 import 'package:bank_app/screens/main/resources/string_assets.dart';
-import 'package:bank_app/screens/main/theme/theme_app.dart';
 import 'package:bank_app/screens/main/widgets/interest.dart';
 import 'package:bank_app/screens/main/widgets/subscribe_list.dart';
 import 'package:bank_app/screens/main/widgets/tariffs_and_limits.dart';
@@ -40,7 +39,7 @@ class UserProfilePage extends StatelessWidget {
                         fontSize: FontAssets.bigFontSize16,
                         fontWeight: FontWeight.w500,
                       ),
-                      indicatorColor: const Color(ThemeApp.tabIndicatorColor),
+                      indicatorColor: ColorAssets.tabIndicator,
                       tabs: [
                         Tab(text: StringAssets.profileTitle),
                         Tab(text: StringAssets.settingsTitle),

@@ -13,6 +13,7 @@ class ColorAssets {
   static Color containerColor = const Color.fromARGB(255, 250, 250, 250);
   static Color chipContainer = const Color.fromARGB(20, 0, 0, 0);
   static Color secondaryColor = const Color.fromARGB(140, 0, 0, 0);
+  static Color tabIndicator = const Color.fromARGB(255, 6, 132, 65);
   static Color whiteColor = Colors.white;
   static Color blackColor = Colors.black;
 }
