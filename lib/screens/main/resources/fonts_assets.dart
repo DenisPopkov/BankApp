@@ -5,5 +5,6 @@ class FontAssets {
 
   static double mediumFontSize14 = 14.0;
   static double bigFontSize16 = 16.0;
+  static double bigFontSize20 = 20.0;
   static double largeFontSize24 = 24.0;
 }

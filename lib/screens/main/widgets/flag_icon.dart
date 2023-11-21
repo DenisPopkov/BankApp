@@ -2,6 +2,7 @@ import 'package:bank_app/screens/main/resources/color_assets.dart';
 import 'package:bank_app/screens/main/resources/img_assets.dart';
 import 'package:bank_app/screens/main/resources/padding_assets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class FlagIcon extends StatelessWidget {
   const FlagIcon({Key? key}) : super(key: key);
@@ -13,10 +14,8 @@ class FlagIcon extends StatelessWidget {
           color: Colors.grey.withOpacity(ColorAssets.lightOpacity),
           shape: BoxShape.circle,
         ),
-        child: Image.asset(
-          ImageAssets.userImage,
-          height: PaddingAssets.smallIcon,
-          width: PaddingAssets.smallIcon,
+        child: SvgPicture.asset(
+          ImageAssets.sberIcon,
         ),
       );
 }

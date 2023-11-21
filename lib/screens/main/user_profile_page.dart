@@ -48,7 +48,7 @@ class UserProfilePage extends StatelessWidget {
                     children: [
                       const ProfileTab(),
                       Container(
-                        color: const Color(ThemeApp.backgroundColor),
+                        color: ColorAssets.containerColor,
                         alignment: Alignment.center,
                         child: Text(StringAssets.settingsTitle),
                       ),
@@ -73,11 +73,12 @@ class ProfileTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        color: ColorAssets.blackColor.withOpacity(ColorAssets.lightOpacity),
+        color: ColorAssets.containerColor,
         padding: EdgeInsets.all(PaddingAssets.mediumPadding),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SizedBox(height: PaddingAssets.titlePadding),
             TitleSection(
               title: StringAssets.subscriptionTitle,
               subTitle: StringAssets.subscriptionsTitle,

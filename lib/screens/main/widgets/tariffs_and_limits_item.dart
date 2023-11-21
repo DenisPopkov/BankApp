@@ -29,8 +29,6 @@ class TariffAndLimitsItem extends StatelessWidget {
         children: [
           SvgPicture.asset(
             pathToImage,
-            width: PaddingAssets.mediumIcon,
-            height: PaddingAssets.mediumIcon,
           ),
           Expanded(
             child: Container(
@@ -90,10 +88,6 @@ class TariffAndLimitsItem extends StatelessWidget {
               children: [
                 SvgPicture.asset(
                   ImageAssets.arrowIcon,
-                  color: ColorAssets.blackColor
-                      .withOpacity(ColorAssets.normalOpacity),
-                  width: PaddingAssets.smallIcon,
-                  height: PaddingAssets.smallIcon,
                 ),
               ],
             ),

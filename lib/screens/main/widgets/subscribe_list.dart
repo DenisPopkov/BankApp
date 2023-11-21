@@ -29,8 +29,6 @@ class SubscribeList extends StatelessWidget {
             costPerMonth: StringAssets.feeSumTitle,
             titleIcon: SvgPicture.asset(
               ImageAssets.percentIcon,
-              height: PaddingAssets.mediumIcon,
-              width: PaddingAssets.mediumIcon,
             ),
           ),
           SubscribeItem(
@@ -39,8 +37,6 @@ class SubscribeList extends StatelessWidget {
             costPerMonth: StringAssets.feeSumTitle,
             titleIcon: SvgPicture.asset(
               ImageAssets.sberIcon,
-              height: PaddingAssets.smallIcon,
-              width: PaddingAssets.smallIcon,
             ),
           ),
         ],

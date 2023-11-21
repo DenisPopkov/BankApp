@@ -6,6 +6,7 @@ class PaddingAssets {
   static double mediumPadding = 16.0;
   static double bigPadding = 24.0;
   static double headerPadding = 18.0;
+  static double titlePadding = 30.0;
   static double bottomPadding = 36.0;
   static double largePadding = 46.0;
   static double superLargePadding = 58.0;

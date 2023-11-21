@@ -21,16 +21,17 @@ class TitleSection extends StatelessWidget {
         Text(
           title,
           style: TextStyle(
-              fontFamily: FontAssets.sfProDisplayBold,
+              fontFamily: FontAssets.sfProTextBold,
               color: ColorAssets.blackColor,
               fontWeight: FontWeight.bold,
-              fontSize: FontAssets.largeFontSize24),
+              fontSize: FontAssets.bigFontSize20),
         ),
         SizedBox(height: PaddingAssets.smallPadding),
         if (subTitle != null && subTitle!.isNotEmpty) ...[
           Text(
             subTitle!,
             style: TextStyle(
+                fontFamily: FontAssets.sfProTextMedium,
                 color: ColorAssets.blackColor
                     .withOpacity(ColorAssets.mediumOpacity),
                 fontWeight: FontWeight.w500,
