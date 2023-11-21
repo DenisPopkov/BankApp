@@ -1,16 +1,24 @@
-# bank_app
+# Effective lab №1, Flutter
 
-A new Flutter project.
+## Screenshots
 
-## Getting Started
+### Bank app screen
 
-This project is a starting point for a Flutter application.
+|                                                                                                                    iOS                                                                                                                    |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/d6ea29ef-09fd-4410-ad33-cbf89ac5ade0" height="400"> <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/2807b474-6bcb-492e-ba78-3361f41458bd" height="400"> |
 
-A few resources to get you started if this is your first Flutter project:
+|                                                              Android                                                               |
+|:----------------------------------------------------------------------------------------------------------------------------------:|
+|               <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/5af70a31-5795-4de0-ab79-6e993a2b3ad8" height="400">  <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/1d6f5630-51a2-4652-86f4-e56ba0177fde" height="400">            |
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## How to run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* You need Xcode 15
+* You need Android studio Hedgehog
+* Flutter ver. 3.16.0 and Dart var. 3.2.0
+* Run -> Run 'app'
+
+## Who to contact with questions
+
+* [Popkov Denis](https://t.me/MolodoyDenis)
