@@ -110,7 +110,7 @@ class ProfileTab extends StatelessWidget {
               padding: EdgeInsets.only(
                 left: PaddingAssets.mediumPadding,
               ),
-              child: const TariffsAndLimits(),
+              child: TariffsAndLimits(),
             ),
             SizedBox(height: PaddingAssets.largePadding),
             Padding(

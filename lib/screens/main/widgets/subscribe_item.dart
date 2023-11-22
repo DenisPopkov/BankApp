@@ -1,3 +1,4 @@
+import 'package:bank_app/screens/main/model/TariffAndLimitItemModel.dart';
 import 'package:bank_app/screens/main/resources/color_assets.dart';
 import 'package:bank_app/screens/main/resources/padding_assets.dart';
 import 'package:flutter/material.dart';
@@ -5,16 +6,10 @@ import 'package:flutter/material.dart';
 import '../resources/fonts_assets.dart';
 
 class SubscribeItem extends StatelessWidget {
-  final Widget titleIcon;
-  final String title;
-  final String description;
-  final String costPerMonth;
+  final SubscribeModel subscribeModel;
 
   const SubscribeItem({
-    required this.titleIcon,
-    required this.title,
-    required this.description,
-    required this.costPerMonth,
+    required this.subscribeModel,
     Key? key,
   }) : super(key: key);
 
@@ -43,10 +38,10 @@ class SubscribeItem extends StatelessWidget {
           children: [
             Row(
               children: [
-                titleIcon,
+                subscribeModel.titleIcon,
                 SizedBox(width: PaddingAssets.mediumSize),
                 Text(
-                  title,
+                  subscribeModel.title,
                   style: TextStyle(
                       fontFamily: FontAssets.sfProTextMedium,
                       color: ColorAssets.blackColor,
@@ -59,7 +54,7 @@ class SubscribeItem extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  description,
+                  subscribeModel.description,
                   style: TextStyle(
                     fontFamily: FontAssets.sfProTextMedium,
                     color: ColorAssets.blackColor,
@@ -73,7 +68,7 @@ class SubscribeItem extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  costPerMonth,
+                  subscribeModel.costPerMonth,
                   style: TextStyle(
                     fontFamily: FontAssets.sfProTextMedium,
                     color: ColorAssets.blackColor

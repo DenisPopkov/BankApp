@@ -2,6 +2,7 @@ import 'package:bank_app/screens/main/resources/color_assets.dart';
 import 'package:bank_app/screens/main/resources/fonts_assets.dart';
 import 'package:bank_app/screens/main/resources/padding_assets.dart';
 import 'package:bank_app/screens/main/resources/string_assets.dart';
+import 'package:bank_app/screens/utils/hover.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -25,8 +26,12 @@ class TopSection extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SvgPicture.asset(
-            ImageAssets.closeIcon,
+          HoverBuilder(
+            foregroundColor: Colors.green,
+            paddingSize: EdgeInsets.all(PaddingAssets.lightPadding),
+            builder: (isHovered) {
+              return SvgPicture.asset(ImageAssets.closeIcon);
+            },
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -48,8 +53,12 @@ class TopSection extends StatelessWidget {
               SizedBox(height: PaddingAssets.bigPadding),
             ],
           ),
-          SvgPicture.asset(
-            ImageAssets.exitIcon,
+          HoverBuilder(
+            foregroundColor: Colors.green,
+            paddingSize: EdgeInsets.all(PaddingAssets.lightPadding),
+            builder: (isHovered) {
+              return SvgPicture.asset(ImageAssets.exitIcon);
+            },
           ),
         ],
       ),

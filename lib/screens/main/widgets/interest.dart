@@ -1,6 +1,7 @@
 import 'package:bank_app/screens/main/resources/string_assets.dart';
 import 'package:flutter/material.dart';
 
+import '../../utils/hover.dart';
 import '../resources/color_assets.dart';
 import '../resources/fonts_assets.dart';
 import '../resources/padding_assets.dart';
@@ -23,21 +24,17 @@ class Interest extends StatelessWidget {
       spacing: PaddingAssets.smallSpacing,
       runSpacing: PaddingAssets.smallSpacing,
       children: items
-          .map((label) => TextButton(
-                onPressed: () {},
-                style: TextButton.styleFrom(
-                  foregroundColor: ColorAssets.chipContainer,
-                  minimumSize: Size.zero,
-                  padding: EdgeInsets.zero,
-                  shape: RoundedRectangleBorder(
-                      borderRadius:
-                          BorderRadius.circular(PaddingAssets.mediumPadding),
-                      side: BorderSide(
-                          color: ColorAssets.chipContainer,
-                          width: PaddingAssets.zeroPadding)),
-                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                ),
-                child: InterestItem(label),
+          .map((label) => HoverBuilder(
+                shape: RoundedRectangleBorder(
+                    borderRadius:
+                        BorderRadius.circular(PaddingAssets.mediumPadding),
+                    side: BorderSide(
+                        color: Colors.transparent,
+                        width: PaddingAssets.zeroPadding)),
+                foregroundColor: ColorAssets.chipContainer,
+                builder: (isHovered) {
+                  return InterestItem(label);
+                },
               ))
           .toList(),
     );

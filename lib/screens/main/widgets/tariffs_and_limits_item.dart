@@ -4,21 +4,14 @@ import 'package:bank_app/screens/main/resources/img_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../model/TariffAndLimitItemModel.dart';
 import '../resources/padding_assets.dart';
 
 class TariffAndLimitsItem extends StatelessWidget {
-  final String pathToImage;
-  final String title;
-  final String subtitle;
-  final Function onTab;
-  final bool isLastItem;
+  final TariffAndLimitItemModel tariffAndLimitModel;
 
   const TariffAndLimitsItem({
-    required this.pathToImage,
-    required this.title,
-    required this.subtitle,
-    required this.onTab,
-    required this.isLastItem,
+    required this.tariffAndLimitModel,
     Key? key,
   }) : super(key: key);
 
@@ -34,7 +27,7 @@ class TariffAndLimitsItem extends StatelessWidget {
               top: PaddingAssets.lightPadding,
             ),
             child: SvgPicture.asset(
-              pathToImage,
+              tariffAndLimitModel.pathToImage,
             ),
           ),
           Expanded(
@@ -44,7 +37,7 @@ class TariffAndLimitsItem extends StatelessWidget {
                 border: Border(
                   bottom: BorderSide(
                     width: PaddingAssets.strokeWidth,
-                    color: isLastItem
+                    color: tariffAndLimitModel.isLastItem
                         ? Colors.transparent
                         : ColorAssets.blackColor
                             .withOpacity(ColorAssets.lightOpacity),
@@ -56,7 +49,7 @@ class TariffAndLimitsItem extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    title,
+                    tariffAndLimitModel.title,
                     style: TextStyle(
                       fontFamily: FontAssets.sfProTextMedium,
                       fontSize: FontAssets.bigFontSize16,
@@ -65,9 +58,9 @@ class TariffAndLimitsItem extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: PaddingAssets.lightPadding),
-                  if (subtitle.isNotEmpty) ...[
+                  if (tariffAndLimitModel.subtitle.isNotEmpty) ...[
                     Text(
-                      subtitle,
+                      tariffAndLimitModel.subtitle,
                       style: TextStyle(
                         fontFamily: FontAssets.sfProTextMedium,
                         fontSize: FontAssets.bigFontSize16,
@@ -83,15 +76,17 @@ class TariffAndLimitsItem extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.only(
-                bottom: isLastItem ? 0 : PaddingAssets.bigPadding,
+                bottom: tariffAndLimitModel.isLastItem
+                    ? 0
+                    : PaddingAssets.bigPadding,
                 right: PaddingAssets.mediumPadding),
             decoration: BoxDecoration(
               border: Border(
-                bottom: isLastItem
+                bottom: tariffAndLimitModel.isLastItem
                     ? BorderSide.none
                     : BorderSide(
                         width: PaddingAssets.strokeWidth,
-                        color: isLastItem
+                        color: tariffAndLimitModel.isLastItem
                             ? ColorAssets.whiteColor
                             : ColorAssets.blackColor
                                 .withOpacity(ColorAssets.lightOpacity),
