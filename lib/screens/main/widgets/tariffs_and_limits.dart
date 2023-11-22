@@ -41,6 +41,9 @@ class TariffsAndLimits extends StatelessWidget {
         return Column(
           children: [
             HoverBuilder(
+              paddingSize: EdgeInsets.only(
+                  top: PaddingAssets.smallPadding,
+                  bottom: PaddingAssets.smallPadding),
               foregroundColor: ColorAssets.chipContainer,
               shape: RoundedRectangleBorder(
                   borderRadius:
@@ -62,7 +65,6 @@ class TariffsAndLimits extends StatelessWidget {
                 );
               },
             ),
-            SizedBox(height: PaddingAssets.mediumRadius),
           ],
         );
       }).toList(),

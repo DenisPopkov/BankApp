@@ -11,58 +11,62 @@ import 'package:flutter/material.dart';
 
 class UserProfilePage extends StatelessWidget {
   const UserProfilePage({Key? key}) : super(key: key);
+  static const int initialIndex = 0;
+  static const int listLength = 2;
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: ColorAssets.whiteColor,
-      child: SafeArea(
-        left: false,
-        right: false,
-        bottom: false,
-        child: Column(
-          children: [
-            const TopSection(),
-            Expanded(
-              child: DefaultTabController(
-                initialIndex: 0,
-                length: 2,
-                child: Scaffold(
-                  appBar: AppBar(
-                    toolbarHeight: PaddingAssets.mediumRadius,
-                    elevation: ColorAssets.lightElevation,
-                    backgroundColor: ColorAssets.whiteColor,
-                    bottom: TabBar(
-                      labelColor: ColorAssets.blackColor,
-                      labelStyle: TextStyle(
-                        fontFamily: FontAssets.sfProTextMedium,
-                        fontSize: FontAssets.bigFontSize16,
-                        fontWeight: FontWeight.w500,
+        color: ColorAssets.whiteColor,
+        child: SingleChildScrollView(
+          child: SafeArea(
+            left: false,
+            right: false,
+            bottom: false,
+            child: Column(
+              children: [
+                const TopSection(),
+                SizedBox(
+                  height: 885,
+                  child: DefaultTabController(
+                    initialIndex: initialIndex,
+                    length: listLength,
+                    child: Scaffold(
+                      appBar: AppBar(
+                        toolbarHeight: PaddingAssets.mediumRadius,
+                        elevation: ColorAssets.lightElevation,
+                        backgroundColor: ColorAssets.whiteColor,
+                        bottom: TabBar(
+                          labelColor: ColorAssets.blackColor,
+                          labelStyle: TextStyle(
+                            fontFamily: FontAssets.sfProTextMedium,
+                            fontSize: FontAssets.bigFontSize16,
+                            fontWeight: FontWeight.w500,
+                          ),
+                          indicatorColor: ColorAssets.tabIndicator,
+                          tabs: [
+                            Tab(text: StringAssets.profileTitle),
+                            Tab(text: StringAssets.settingsTitle),
+                          ],
+                        ),
                       ),
-                      indicatorColor: ColorAssets.tabIndicator,
-                      tabs: [
-                        Tab(text: StringAssets.profileTitle),
-                        Tab(text: StringAssets.settingsTitle),
-                      ],
+                      body: TabBarView(
+                        children: [
+                          const ProfileTab(),
+                          Container(
+                            color: ColorAssets.containerColor,
+                            alignment: Alignment.center,
+                            child: Text(StringAssets.settingsTitle),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                  body: TabBarView(
-                    children: [
-                      const ProfileTab(),
-                      Container(
-                        color: ColorAssets.containerColor,
-                        alignment: Alignment.center,
-                        child: Text(StringAssets.settingsTitle),
-                      ),
-                    ],
-                  ),
                 ),
-              ),
+              ],
             ),
-          ],
-        ),
-      ),
-    );
+          ),
+        ));
   }
 }
 
@@ -92,9 +96,8 @@ class ProfileTab extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.only(
-                left: PaddingAssets.normalPadding,
-                right: PaddingAssets.smallPadding
-              ),
+                  left: PaddingAssets.normalPadding,
+                  right: PaddingAssets.smallPadding),
               child: const SubscribeList(),
             ),
             SizedBox(height: PaddingAssets.largePadding),
