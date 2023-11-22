@@ -28,7 +28,7 @@ class SubscribeList extends StatelessWidget {
         description: StringAssets.autoSubscriptionTitle,
         costPerMonth: StringAssets.feeSumTitle,
         titleIcon: SvgPicture.asset(
-          ImageAssets.percentIcon,
+          ImageAssets.roundPercentIcon,
         ),
       ),
     ];
