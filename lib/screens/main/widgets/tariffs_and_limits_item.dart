@@ -77,7 +77,7 @@ class TariffAndLimitsItem extends StatelessWidget {
           Container(
             padding: EdgeInsets.only(
                 bottom: tariffAndLimitModel.isLastItem
-                    ? 0
+                    ? PaddingAssets.zeroPadding
                     : PaddingAssets.bigPadding,
                 right: PaddingAssets.mediumPadding),
             decoration: BoxDecoration(

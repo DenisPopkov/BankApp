@@ -1,4 +1,3 @@
-import 'package:bank_app/screens/main/model/TariffAndLimitItemModel.dart';
 import 'package:bank_app/screens/main/resources/img_assets.dart';
 import 'package:bank_app/screens/main/resources/padding_assets.dart';
 import 'package:bank_app/screens/main/resources/string_assets.dart';
@@ -7,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../utils/hover.dart';
+import '../model/SubscribeModel.dart';
 import '../resources/color_assets.dart';
 
 class SubscribeList extends StatelessWidget {

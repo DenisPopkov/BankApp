@@ -49,12 +49,15 @@ class TariffsAndLimits extends StatelessWidget {
                       color: Colors.transparent,
                       width: PaddingAssets.zeroPadding)),
               builder: (isHovered) {
-                return TariffAndLimitsItem(
-                  tariffAndLimitModel: TariffAndLimitItemModel(
-                    title: item.title,
-                    subtitle: item.subtitle,
-                    pathToImage: item.pathToImage,
-                    isLastItem: item.isLastItem,
+                return Padding(
+                  padding: EdgeInsets.only(left: PaddingAssets.mediumPadding),
+                  child: TariffAndLimitsItem(
+                    tariffAndLimitModel: TariffAndLimitItemModel(
+                      title: item.title,
+                      subtitle: item.subtitle,
+                      pathToImage: item.pathToImage,
+                      isLastItem: item.isLastItem,
+                    ),
                   ),
                 );
               },

@@ -92,7 +92,8 @@ class ProfileTab extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.only(
-                left: PaddingAssets.mediumPadding,
+                left: PaddingAssets.normalPadding,
+                right: PaddingAssets.smallPadding
               ),
               child: const SubscribeList(),
             ),
@@ -106,12 +107,7 @@ class ProfileTab extends StatelessWidget {
                 subTitle: StringAssets.onlySberTitle,
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(
-                left: PaddingAssets.mediumPadding,
-              ),
-              child: TariffsAndLimits(),
-            ),
+            TariffsAndLimits(),
             SizedBox(height: PaddingAssets.largePadding),
             Padding(
               padding: EdgeInsets.only(
