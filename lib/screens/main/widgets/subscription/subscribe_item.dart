@@ -27,7 +27,7 @@ class SubscribeItem extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               color:
-                  ColorAssets.blackColor.withOpacity(ColorAssets.lightOpacity),
+                  ColorAssets.blackColor.withOpacity(ColorAssets.slightOpacity),
               spreadRadius: ColorAssets.spreadRadius,
               blurRadius: ColorAssets.blurRadius,
               offset: Offset(ColorAssets.shadowX, ColorAssets.shadowY),

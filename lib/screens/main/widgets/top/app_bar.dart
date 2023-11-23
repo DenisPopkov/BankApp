@@ -23,6 +23,7 @@ class CustomAppbar extends StatelessWidget {
       expandedHeight: PaddingAssets.expandedHeight,
       actions: [
         IconButton(
+          padding: EdgeInsets.only(top: PaddingAssets.titlePadding),
           icon: HoverBuilder(
             foregroundColor: Colors.green,
             paddingSize: EdgeInsets.all(PaddingAssets.lightPadding),
@@ -34,6 +35,7 @@ class CustomAppbar extends StatelessWidget {
         )
       ],
       leading: IconButton(
+        padding: EdgeInsets.only(top: PaddingAssets.titlePadding),
         icon: HoverBuilder(
           foregroundColor: Colors.green,
           paddingSize: EdgeInsets.all(PaddingAssets.lightPadding),
@@ -43,21 +45,16 @@ class CustomAppbar extends StatelessWidget {
         ),
         onPressed: () {},
       ),
-      titleTextStyle: TextStyle(
-        color: Colors.black,
-        fontSize: FontAssets.bigFontSize16,
-        fontFamily: FontAssets.sfProTextMedium,
-        fontWeight: FontWeight.w500,
-      ),
       bottom: TabBar(
         controller: tabController,
         indicatorColor: Colors.green,
+        unselectedLabelColor: Colors.grey,
+        labelColor: Colors.black,
         tabs: <Widget>[
           Tab(
             child: Text(
               StringAssets.profileTitle,
               style: TextStyle(
-                color: Colors.black,
                 fontSize: FontAssets.bigFontSize16,
                 fontFamily: FontAssets.sfProTextMedium,
                 fontWeight: FontWeight.w500,
@@ -67,7 +64,6 @@ class CustomAppbar extends StatelessWidget {
           Tab(
             child: Text(StringAssets.settingsTitle,
                 style: TextStyle(
-                  color: Colors.black,
                   fontSize: FontAssets.bigFontSize16,
                   fontFamily: FontAssets.sfProTextMedium,
                   fontWeight: FontWeight.w500,
@@ -79,8 +75,11 @@ class CustomAppbar extends StatelessWidget {
         collapseMode: CollapseMode.pin,
         background: Center(
           child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
+                SizedBox(
+                  height: PaddingAssets.bottomPadding,
+                ),
                 Image.asset(
                   ImageAssets.userImage,
                   width: PaddingAssets.imageSize,
