@@ -27,33 +27,34 @@ class _UserProfilePageState extends State<UserProfilePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: ColorAssets.whiteColor,
         body: DefaultTabController(
-      length: listLength,
-      child: SafeArea(
-        left: false,
-        right: false,
-        bottom: false,
-        child: NestedScrollView(
-          headerSliverBuilder: (context, value) {
-            return [
-              CustomAppbar(
-                tabController: _tabController,
+          length: listLength,
+          child: SafeArea(
+            left: false,
+            right: false,
+            bottom: false,
+            child: NestedScrollView(
+              headerSliverBuilder: (context, value) {
+                return [
+                  CustomAppbar(
+                    tabController: _tabController,
+                  ),
+                ];
+              },
+              body: TabBarView(
+                controller: _tabController,
+                children: [
+                  const ProfileTab(),
+                  Container(
+                    color: ColorAssets.containerColor,
+                    alignment: Alignment.center,
+                    child: Text(StringAssets.settingsTitle),
+                  ),
+                ],
               ),
-            ];
-          },
-          body: TabBarView(
-            controller: _tabController,
-            children: [
-              const ProfileTab(),
-              Container(
-                color: ColorAssets.containerColor,
-                alignment: Alignment.center,
-                child: Text(StringAssets.settingsTitle),
-              ),
-            ],
+            ),
           ),
-        ),
-      ),
-    ));
+        ));
   }
 }
