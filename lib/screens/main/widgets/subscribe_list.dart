@@ -1,11 +1,9 @@
-import 'package:bank_app/screens/main/resources/img_assets.dart';
 import 'package:bank_app/screens/main/resources/padding_assets.dart';
-import 'package:bank_app/screens/main/resources/string_assets.dart';
 import 'package:bank_app/screens/main/widgets/subscribe_item.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 import '../../utils/hover.dart';
+import '../model/ModelData.dart';
 import '../model/SubscribeModel.dart';
 import '../resources/color_assets.dart';
 
@@ -14,31 +12,12 @@ class SubscribeList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final items = <SubscribeModel>[
-      SubscribeModel(
-        title: StringAssets.sberPrimeTitle,
-        description: StringAssets.feeTitle,
-        costPerMonth: StringAssets.feeSumTitle,
-        titleIcon: SvgPicture.asset(
-          ImageAssets.sberIcon,
-        ),
-      ),
-      SubscribeModel(
-        title: StringAssets.transactionsTitle,
-        description: StringAssets.autoSubscriptionTitle,
-        costPerMonth: StringAssets.feeSumTitle,
-        titleIcon: SvgPicture.asset(
-          ImageAssets.roundPercentIcon,
-        ),
-      ),
-    ];
-
     return SizedBox(
       height: PaddingAssets.subscribeItemHeight,
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
-          children: items.map((item) {
+          children: MockData.subscribeItems.map((item) {
             return Padding(
               padding: EdgeInsets.zero,
               child: HoverBuilder(

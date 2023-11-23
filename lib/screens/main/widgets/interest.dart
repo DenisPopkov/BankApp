@@ -1,7 +1,7 @@
-import 'package:bank_app/screens/main/resources/string_assets.dart';
 import 'package:flutter/material.dart';
 
 import '../../utils/hover.dart';
+import '../model/ModelData.dart';
 import '../resources/color_assets.dart';
 import '../resources/fonts_assets.dart';
 import '../resources/padding_assets.dart';
@@ -11,19 +11,10 @@ class Interest extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final items = <String>[
-      StringAssets.foodChip,
-      StringAssets.selfLearnChip,
-      StringAssets.techChip,
-      StringAssets.homeChip,
-      StringAssets.entertainmentChip,
-      StringAssets.selfCareChip,
-      StringAssets.scienceChip,
-    ];
     return Wrap(
       spacing: PaddingAssets.smallSpacing,
       runSpacing: PaddingAssets.smallSpacing,
-      children: items
+      children: MockData.interestItems
           .map((label) => HoverBuilder(
                 shape: RoundedRectangleBorder(
                     borderRadius:
