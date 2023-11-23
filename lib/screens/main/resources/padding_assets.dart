@@ -14,6 +14,7 @@ class PaddingAssets {
 
   // Sizes
   static double slightSize = 2.0;
+  static double elevation = 2.0;
   static double mediumRadius = 12.0;
   static double mediumSize = 12.0;
   static double smallIcon = 24.0;
@@ -23,6 +24,7 @@ class PaddingAssets {
   static double subscribeItemWidth = 220.0;
   static double tarriffItemHeight = 54.0;
   static double strokeWidth = 1.5;
+  static double expandedHeight = 300.0;
 
   // Spacings
   static double smallSpacing = 8.0;
