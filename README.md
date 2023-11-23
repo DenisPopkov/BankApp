@@ -6,11 +6,11 @@
 
 |                                                                                                                    iOS                                                                                                                    |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/7e162344-2abd-40fb-9f1b-76531a162c98" height="400"> <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/ae7c1aa1-4420-4f59-9c99-d718147199a7" height="400"> |
+| <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/1cac8dce-b4de-47df-9f06-2e07699aec11" height="400"> <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/d0b98b37-f19d-4048-ab1b-978e45864911" height="400"> |
 
 |                                                              Android                                                               |
 |:----------------------------------------------------------------------------------------------------------------------------------:|
-|               <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/f42a4008-fe97-4049-87b7-12425f5d7c74" height="400">  <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/9887bdee-15f9-4544-84be-678589574767" height="400">            |
+|               <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/04288def-963c-48c5-af3d-6f89c6945176" height="400">  <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/c8d94b40-62b9-4d4c-8adc-728d086cdc09" height="400">            |
 
 ## How to run
 
