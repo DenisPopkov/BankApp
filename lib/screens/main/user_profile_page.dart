@@ -2,11 +2,11 @@ import 'package:bank_app/screens/main/resources/color_assets.dart';
 import 'package:bank_app/screens/main/resources/fonts_assets.dart';
 import 'package:bank_app/screens/main/resources/padding_assets.dart';
 import 'package:bank_app/screens/main/resources/string_assets.dart';
-import 'package:bank_app/screens/main/widgets/interest.dart';
-import 'package:bank_app/screens/main/widgets/subscribe_list.dart';
-import 'package:bank_app/screens/main/widgets/tariffs_and_limits.dart';
-import 'package:bank_app/screens/main/widgets/title_section.dart';
-import 'package:bank_app/screens/main/widgets/top_section.dart';
+import 'package:bank_app/screens/main/widgets/interest_chip.dart';
+import 'package:bank_app/screens/main/widgets/subscription/subscribe_list.dart';
+import 'package:bank_app/screens/main/widgets/tariff/tariffs_and_limits.dart';
+import 'package:bank_app/screens/main/widgets/top/title_section.dart';
+import 'package:bank_app/screens/main/widgets/top/top_section.dart';
 import 'package:flutter/material.dart';
 
 class UserProfilePage extends StatelessWidget {
@@ -27,7 +27,7 @@ class UserProfilePage extends StatelessWidget {
               children: [
                 const TopSection(),
                 SizedBox(
-                  height: 885,
+                  height: 1000,
                   child: DefaultTabController(
                     initialIndex: initialIndex,
                     length: listLength,
@@ -126,7 +126,7 @@ class ProfileTab extends StatelessWidget {
                 left: PaddingAssets.mediumPadding,
                 right: PaddingAssets.mediumPadding,
               ),
-              child: const Interest(),
+              child: const TagsBlock(),
             ),
             SizedBox(height: PaddingAssets.bottomPadding),
           ],

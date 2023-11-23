@@ -6,7 +6,7 @@ import 'package:bank_app/screens/utils/hover.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../resources/img_assets.dart';
+import '../../resources/img_assets.dart';
 
 class TopSection extends StatelessWidget {
   const TopSection({

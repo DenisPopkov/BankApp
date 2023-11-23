@@ -15,6 +15,12 @@ class MockData {
     StringAssets.scienceChip,
   ];
 
+  static Map<String, bool> getTagsMap() {
+    return {for (var v in interestItems) v: false};
+  }
+
+  static Map<String, bool> interestItemMap = getTagsMap();
+
   static final List<SubscribeModel> subscribeItems = <SubscribeModel>[
     SubscribeModel(
       title: StringAssets.sberPrimeTitle,

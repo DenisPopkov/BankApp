@@ -1,11 +1,11 @@
 import 'package:bank_app/screens/main/resources/padding_assets.dart';
-import 'package:bank_app/screens/main/widgets/subscribe_item.dart';
+import 'package:bank_app/screens/main/widgets/subscription/subscribe_item.dart';
 import 'package:flutter/material.dart';
 
-import '../../utils/hover.dart';
-import '../model/ModelData.dart';
-import '../model/SubscribeModel.dart';
-import '../resources/color_assets.dart';
+import '../../../utils/hover.dart';
+import '../../model/ModelData.dart';
+import '../../model/SubscribeModel.dart';
+import '../../resources/color_assets.dart';
 
 class SubscribeList extends StatelessWidget {
   const SubscribeList({Key? key}) : super(key: key);

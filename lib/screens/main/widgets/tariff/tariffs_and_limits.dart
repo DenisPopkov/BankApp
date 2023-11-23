@@ -1,12 +1,12 @@
 import 'package:bank_app/screens/main/resources/img_assets.dart';
 import 'package:bank_app/screens/main/resources/padding_assets.dart';
 import 'package:bank_app/screens/main/resources/string_assets.dart';
-import 'package:bank_app/screens/main/widgets/tariffs_and_limits_item.dart';
+import 'package:bank_app/screens/main/widgets/tariff/tariffs_and_limits_item.dart';
 import 'package:flutter/material.dart';
 
-import '../../utils/hover.dart';
-import '../model/TariffAndLimitItemModel.dart';
-import '../resources/color_assets.dart';
+import '../../../utils/hover.dart';
+import '../../model/TariffAndLimitItemModel.dart';
+import '../../resources/color_assets.dart';
 
 class TariffsAndLimits extends StatelessWidget {
   TariffsAndLimits({Key? key}) : super(key: key);

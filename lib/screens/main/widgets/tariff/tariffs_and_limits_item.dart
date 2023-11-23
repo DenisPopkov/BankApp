@@ -4,8 +4,8 @@ import 'package:bank_app/screens/main/resources/img_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../model/TariffAndLimitItemModel.dart';
-import '../resources/padding_assets.dart';
+import '../../model/TariffAndLimitItemModel.dart';
+import '../../resources/padding_assets.dart';
 
 class TariffAndLimitsItem extends StatelessWidget {
   final TariffAndLimitItemModel tariffAndLimitModel;
