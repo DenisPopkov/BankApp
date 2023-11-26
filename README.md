@@ -14,9 +14,9 @@
 
 ## How to run
 
-* You need Xcode 15
-* You need Android studio Hedgehog
-* Flutter ver. 3.16.0 and Dart var. 3.2.0
+* You need at least Xcode 15
+* You need at least Android studio Hedgehog
+* Flutter ver. 3.16.0 and Dart ver. 3.2.0
 * Run -> Run 'app'
 
 ## Who to contact with questions
