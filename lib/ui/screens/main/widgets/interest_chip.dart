@@ -1,8 +1,8 @@
-import 'package:bank_app/screens/main/resources/color_assets.dart';
-import 'package:bank_app/screens/main/resources/padding_assets.dart';
 import 'package:flutter/material.dart';
 
 import '../model/ModelData.dart';
+import '../resources/color_assets.dart';
+import '../resources/padding_assets.dart';
 
 class TagsBlock extends StatefulWidget {
   const TagsBlock({super.key});
@@ -75,7 +75,7 @@ class _SelectableFilterChipState extends State<SelectableInterestChip> {
       },
       showCheckmark: false,
       selectedColor:
-          _selected ? ColorAssets.chipContainerSelected : Colors.grey,
+          _selected ? ColorAssets.chipContainerSelected : ColorAssets.grayColor,
     );
   }
 }

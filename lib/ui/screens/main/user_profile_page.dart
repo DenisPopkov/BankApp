@@ -1,7 +1,7 @@
-import 'package:bank_app/screens/main/profile_tab.dart';
-import 'package:bank_app/screens/main/resources/color_assets.dart';
-import 'package:bank_app/screens/main/resources/string_assets.dart';
-import 'package:bank_app/screens/main/widgets/top/app_bar.dart';
+import 'package:bank_app/ui/screens/main/profile_tab.dart';
+import 'package:bank_app/ui/screens/main/resources/color_assets.dart';
+import 'package:bank_app/ui/screens/main/resources/string_assets.dart';
+import 'package:bank_app/ui/screens/main/widgets/top/app_bar.dart';
 import 'package:flutter/material.dart';
 
 class UserProfilePage extends StatefulWidget {

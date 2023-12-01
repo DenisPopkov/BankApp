@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../utils/hover.dart';
+import '../../../../utils/hover.dart';
 import '../../resources/color_assets.dart';
 import '../../resources/fonts_assets.dart';
 import '../../resources/img_assets.dart';
@@ -25,7 +25,7 @@ class CustomAppbar extends StatelessWidget {
         IconButton(
           padding: EdgeInsets.only(top: PaddingAssets.titlePadding),
           icon: HoverBuilder(
-            foregroundColor: Colors.green,
+            foregroundColor: ColorAssets.greenColor,
             paddingSize: EdgeInsets.all(PaddingAssets.lightPadding),
             builder: (isHovered) {
               return SvgPicture.asset(ImageAssets.exitIcon);
@@ -37,7 +37,7 @@ class CustomAppbar extends StatelessWidget {
       leading: IconButton(
         padding: EdgeInsets.only(top: PaddingAssets.titlePadding),
         icon: HoverBuilder(
-          foregroundColor: Colors.green,
+          foregroundColor: ColorAssets.greenColor,
           paddingSize: EdgeInsets.all(PaddingAssets.lightPadding),
           builder: (isHovered) {
             return SvgPicture.asset(ImageAssets.closeIcon);
@@ -47,8 +47,8 @@ class CustomAppbar extends StatelessWidget {
       ),
       bottom: TabBar(
         controller: tabController,
-        indicatorColor: Colors.green,
-        unselectedLabelColor: Colors.grey,
+        indicatorColor: ColorAssets.greenColor,
+        unselectedLabelColor: ColorAssets.grayColor,
         labelColor: Colors.black,
         tabs: <Widget>[
           Tab(

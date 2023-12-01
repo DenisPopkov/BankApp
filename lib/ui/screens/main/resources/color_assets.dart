@@ -17,4 +17,6 @@ class ColorAssets {
   static Color tabIndicator = const Color.fromARGB(255, 6, 132, 65);
   static Color whiteColor = Colors.white;
   static Color blackColor = Colors.black;
+  static Color greenColor = Colors.green;
+  static Color grayColor = Colors.grey;
 }

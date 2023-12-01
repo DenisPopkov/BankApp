@@ -1,7 +1,7 @@
-import 'package:bank_app/screens/main/resources/string_assets.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../resources/img_assets.dart';
+import '../resources/string_assets.dart';
 import 'SubscribeModel.dart';
 
 class MockData {

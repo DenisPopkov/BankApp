@@ -1,9 +1,9 @@
-import 'package:bank_app/screens/main/resources/color_assets.dart';
-import 'package:bank_app/screens/main/resources/padding_assets.dart';
 import 'package:flutter/material.dart';
 
 import '../../model/SubscribeModel.dart';
+import '../../resources/color_assets.dart';
 import '../../resources/fonts_assets.dart';
+import '../../resources/padding_assets.dart';
 
 class SubscribeItem extends StatelessWidget {
   final SubscribeModel subscribeModel;

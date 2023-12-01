@@ -1,4 +1,4 @@
-import 'package:bank_app/screens/main/user_profile_page.dart';
+import 'package:bank_app/ui/screens/main/user_profile_page.dart';
 import 'package:flutter/material.dart';
 
 class UserProfileBankApp extends StatelessWidget {

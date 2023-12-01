@@ -1,7 +1,8 @@
-import 'package:bank_app/screens/main/resources/color_assets.dart';
-import 'package:bank_app/screens/main/resources/fonts_assets.dart';
-import 'package:bank_app/screens/main/resources/padding_assets.dart';
 import 'package:flutter/material.dart';
+
+import '../../resources/color_assets.dart';
+import '../../resources/fonts_assets.dart';
+import '../../resources/padding_assets.dart';
 
 class TitleSection extends StatelessWidget {
   final String title;

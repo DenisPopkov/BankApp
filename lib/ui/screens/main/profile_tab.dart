@@ -1,10 +1,10 @@
-import 'package:bank_app/screens/main/resources/color_assets.dart';
-import 'package:bank_app/screens/main/resources/padding_assets.dart';
-import 'package:bank_app/screens/main/resources/string_assets.dart';
-import 'package:bank_app/screens/main/widgets/interest_chip.dart';
-import 'package:bank_app/screens/main/widgets/subscription/subscribe_list.dart';
-import 'package:bank_app/screens/main/widgets/tariff/tariffs_and_limits.dart';
-import 'package:bank_app/screens/main/widgets/top/title_section.dart';
+import 'package:bank_app/ui/screens/main/resources/color_assets.dart';
+import 'package:bank_app/ui/screens/main/resources/padding_assets.dart';
+import 'package:bank_app/ui/screens/main/resources/string_assets.dart';
+import 'package:bank_app/ui/screens/main/widgets/interest_chip.dart';
+import 'package:bank_app/ui/screens/main/widgets/subscription/subscribe_list.dart';
+import 'package:bank_app/ui/screens/main/widgets/tariff/tariffs_and_limits.dart';
+import 'package:bank_app/ui/screens/main/widgets/top/title_section.dart';
 import 'package:flutter/cupertino.dart';
 
 class ProfileTab extends StatelessWidget {
