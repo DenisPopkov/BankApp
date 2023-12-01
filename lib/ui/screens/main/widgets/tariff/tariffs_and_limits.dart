@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 
 import '../../../../utils/hover.dart';
 import '../../model/TariffAndLimitItemModel.dart';
-import '../../resources/color_assets.dart';
-import '../../resources/img_assets.dart';
-import '../../resources/padding_assets.dart';
-import '../../resources/string_assets.dart';
+import '../../theme/color_assets.dart';
+import '../../theme/img_assets.dart';
+import '../../theme/padding_assets.dart';
+import '../../theme/string_assets.dart';
 
 class TariffsAndLimits extends StatelessWidget {
   TariffsAndLimits({Key? key}) : super(key: key);

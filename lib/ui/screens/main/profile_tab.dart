@@ -1,6 +1,6 @@
-import 'package:bank_app/ui/screens/main/resources/color_assets.dart';
-import 'package:bank_app/ui/screens/main/resources/padding_assets.dart';
-import 'package:bank_app/ui/screens/main/resources/string_assets.dart';
+import 'package:bank_app/ui/screens/main/theme/color_assets.dart';
+import 'package:bank_app/ui/screens/main/theme/padding_assets.dart';
+import 'package:bank_app/ui/screens/main/theme/string_assets.dart';
 import 'package:bank_app/ui/screens/main/widgets/interest_chip.dart';
 import 'package:bank_app/ui/screens/main/widgets/subscription/subscribe_list.dart';
 import 'package:bank_app/ui/screens/main/widgets/tariff/tariffs_and_limits.dart';

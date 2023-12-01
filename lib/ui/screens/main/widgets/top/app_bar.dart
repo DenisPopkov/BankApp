@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../../utils/hover.dart';
-import '../../resources/color_assets.dart';
-import '../../resources/fonts_assets.dart';
-import '../../resources/img_assets.dart';
-import '../../resources/padding_assets.dart';
-import '../../resources/string_assets.dart';
+import '../../theme/color_assets.dart';
+import '../../theme/fonts_assets.dart';
+import '../../theme/img_assets.dart';
+import '../../theme/padding_assets.dart';
+import '../../theme/string_assets.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({Key? key, required this.tabController}) : super(key: key);

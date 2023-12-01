@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../model/TariffAndLimitItemModel.dart';
-import '../../resources/color_assets.dart';
-import '../../resources/fonts_assets.dart';
-import '../../resources/img_assets.dart';
-import '../../resources/padding_assets.dart';
+import '../../theme/color_assets.dart';
+import '../../theme/fonts_assets.dart';
+import '../../theme/img_assets.dart';
+import '../../theme/padding_assets.dart';
 
 class TariffAndLimitsItem extends StatelessWidget {
   final TariffAndLimitItemModel tariffAndLimitModel;

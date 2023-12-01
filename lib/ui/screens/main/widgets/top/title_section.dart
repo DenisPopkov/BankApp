@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../resources/color_assets.dart';
-import '../../resources/fonts_assets.dart';
-import '../../resources/padding_assets.dart';
+import '../../theme/color_assets.dart';
+import '../../theme/fonts_assets.dart';
+import '../../theme/padding_assets.dart';
 
 class TitleSection extends StatelessWidget {
   final String title;

@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import '../../../../utils/hover.dart';
 import '../../model/ModelData.dart';
 import '../../model/SubscribeModel.dart';
-import '../../resources/color_assets.dart';
-import '../../resources/padding_assets.dart';
+import '../../theme/color_assets.dart';
+import '../../theme/padding_assets.dart';
 
 class SubscribeList extends StatelessWidget {
   const SubscribeList({Key? key}) : super(key: key);

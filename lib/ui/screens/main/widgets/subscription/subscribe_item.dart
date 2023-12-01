@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../model/SubscribeModel.dart';
-import '../../resources/color_assets.dart';
-import '../../resources/fonts_assets.dart';
-import '../../resources/padding_assets.dart';
+import '../../theme/color_assets.dart';
+import '../../theme/fonts_assets.dart';
+import '../../theme/padding_assets.dart';
 
 class SubscribeItem extends StatelessWidget {
   final SubscribeModel subscribeModel;
