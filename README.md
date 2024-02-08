@@ -1,16 +1,24 @@
-# bank_app
+# Effective lab №1, Flutter
 
-A new Flutter project.
+## Screenshots
 
-## Getting Started
+### Bank app screen
 
-This project is a starting point for a Flutter application.
+|                                                                                                                    iOS                                                                                                                    |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/54a8b9b3-8ee7-4c1b-8fdb-dd0825846362" height="400"> <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/6eaea852-6e35-41ff-bbb5-f03e93c838c4" height="400"> |
 
-A few resources to get you started if this is your first Flutter project:
+|                                                              Android                                                               |
+|:----------------------------------------------------------------------------------------------------------------------------------:|
+|<img src="https://github.com/DenisPopkov/BankApp/assets/57343209/1273ba50-df2b-49a0-83c8-74b0f855b1c9" height="400"> <img src="https://github.com/DenisPopkov/BankApp/assets/57343209/577d89c0-11b8-4acb-9ceb-84daf93b23a4" height="400">            |
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## How to run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* You need at least Xcode 15
+* You need at least Android studio Hedgehog
+* Flutter ver. 3.16.0 and Dart ver. 3.2.0
+* Run -> Run 'app'
+
+## Who to contact with questions
+
+* [Popkov Denis](https://t.me/MolodoyDenis)
